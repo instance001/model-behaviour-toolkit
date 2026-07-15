@@ -78,6 +78,7 @@ This repo is being rebuilt from a collection of older GPT-era prompt/toolkit arc
 ## Beginner Docs
 
 - `docs/user-manual.md`
+- [GLOSSARY.md](GLOSSARY.md)
 
 ## Contributor Docs
 
