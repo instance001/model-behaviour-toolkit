@@ -27,6 +27,42 @@ This repo is being rebuilt from a collection of older GPT-era prompt/toolkit arc
 6. Use `troubleshooting/` when the assistant starts behaving badly.
 7. Use `bundles/reset-bundle.md` when drift, context loss, or weird tone shows up.
 
+## Toolkit Use Path
+
+```mermaid
+flowchart LR
+    newSession["New session<br/>or fresh setup"] --> manual["User manual<br/>plain-language orientation"]
+    manual --> starter["Starter bundle<br/>baseline + boundaries + execution contract"]
+    starter --> preset{"Main work mode?"}
+    preset -->|coding| coding["Coding preset<br/>implementation-focused defaults"]
+    preset -->|research| research["Research preset<br/>evidence + calibration defaults"]
+    preset -->|creative| creative["Creative preset<br/>divergence with grounding"]
+    preset -->|general| examples["Examples<br/>copy-ready compositions"]
+
+    starter --> compact["Compact variants<br/>tiny instruction boxes"]
+    coding --> run["Run session<br/>explicit state + grounded collaboration"]
+    research --> run
+    creative --> run
+    examples --> run
+    compact --> run
+
+    run --> drift{"Drift or bad behaviour?"}
+    drift -->|no| evaluate["Evaluate output<br/>rubric + scorecard"]
+    drift -->|yes, context missing| handoff["Session handoff<br/>restore explicit state"]
+    drift -->|yes, behaviour bad| repair["Troubleshooting<br/>diagnose + repair prompt"]
+    handoff --> reset["Reset bundle<br/>recover grounded session quality"]
+    repair --> reset
+    reset --> run
+
+    classDef start fill:#eef7f2,stroke:#25624f,color:#14231d;
+    classDef kit fill:#fff8ec,stroke:#9b5b2e,color:#2a1b10;
+    classDef recovery fill:#f3f0ea,stroke:#777,color:#333;
+
+    class newSession,manual,starter,run,evaluate start;
+    class preset,coding,research,creative,examples,compact kit;
+    class drift,handoff,repair,reset recovery;
+```
+
 ## First-Wave Modules
 
 - `modules/baseline/session-baseline.md`
