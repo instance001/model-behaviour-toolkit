@@ -22,6 +22,8 @@ Everything added here should follow these rules:
 - Warmth is fine; anthropomorphic theater is not.
 - Small, durable modules beat giant sacred texts.
 - Finished examples should be easier to use than theory docs.
+- Friendly labels are allowed when they help users navigate the toolkit without
+  misrepresenting capability, state, privacy, or behaviour.
 
 ## Before You Add Anything
 
@@ -84,6 +86,7 @@ When writing prompts or docs:
 - Explain jargon or avoid it.
 - Prefer practical language over manifesto language.
 - Remove unnecessary mystique.
+- Do not flatten useful warmth or familiar labels merely to sound technical.
 - Do not write as if the prompt is magic.
 - Do not imply feelings, consciousness, dependency, or hidden agency.
 - Keep examples concrete.

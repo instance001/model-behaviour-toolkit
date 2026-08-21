@@ -11,6 +11,8 @@ This repo is being rebuilt from a collection of older GPT-era prompt/toolkit arc
 - Continuity should come from explicit state, not fake memory claims.
 - Warmth is fine; anthropomorphic theater is not.
 - Good defaults should reduce drift, not create a persona cult.
+- Friendly labels and natural tone are fine when they do not mislead users about
+  capability, state, privacy, or behaviour.
 
 ## Current Status
 

@@ -130,6 +130,8 @@ When drafting the prompt itself:
 - avoid claims of hidden memory
 - avoid personality or awakening language
 - keep warmth practical
+- preserve friendly labels when they help the user and do not mislead about
+  capability, state, privacy, or behaviour
 - make the intended behaviour explicit
 - prefer short instruction lists over sprawling paragraphs
 
